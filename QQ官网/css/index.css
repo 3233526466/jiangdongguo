@@ -1,0 +1,638 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #979797;
+}
+li{
+    list-style: none;
+}
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 900;
+}
+.headcip {
+    height: 75px;
+    box-shadow: 0 0 black;
+}
+.headcip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+.toptool{
+    max-width: 1170px;
+    min-width: 980px;
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
+}
+.logolink{
+    float: left;
+    overflow: hidden;
+    width: 106px;
+    height:0;
+    padding-top:76px;
+    font-size:0;
+    background:transparent  url("../images/imlogo_b.png") no-repeat left 15px;
+}
+#logonav{
+    width: 450px;
+    height: 100%;
+    float: left;
+    padding-left: 18px;
+}
+#logonav li{
+    float: left;
+    margin-left: 20px;
+}
+#logonav li a{
+    float: left;
+    padding:0 20px;
+    line-height: 75px;
+    font-size: 16px;
+    color: #333;
+}
+#logonav li.topnav{
+   background-color: #12b7f5;
+}
+#topright{
+    float: right;
+    width: 320px;
+    font-size: 14px;
+}
+#topright a.barze{
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    line-height: 39px;
+    width: 96px;
+    height: 0;
+    background: url("../images/icons.png") no-repeat 0 -244px;
+    color: #fff;
+    margin: 18px 0 0 0;
+    padding: 39px 0 0 0;
+}
+#topright ul{
+    float: right;
+    height: 40px;
+    padding-top: 6px;
+}
+#topright li{
+    float: right;
+    position: relative;
+    margin-left: 30px;
+    line-height: 40px;
+}
+#topright a{
+    color: #333;
+}
+#current{
+    float: right;
+    line-height: 17px;
+    text-align: right;
+    font-size:14px;
+}
+#current a{
+    color: #333;
+}
+#current a:hover{
+    text-decoration: underline;
+}
+.crossbanenr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* max-width: 1920px; */
+    min-width: 1007px;
+    margin: 0 auto;
+}
+.crossbanenr #timbg {
+    display: block;
+    background: transparent url(../images/tim_bg_1.jpg) no-repeat center center;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+.tim-img {
+    width: 100%;
+    height: auto;
+    /* left: 0.8%; */
+    /* bottom: 0; */
+    /* position: absolute; */
+}
+.tim-content {
+    position: relative;
+    width: 100%;
+    max-width: 1900px;
+    min-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+.tim .bnleft {
+    padding-top: 6%;
+}
+
+.bnleft {
+    left: 0;
+}
+.tim-wenzi {
+    background: url(../images/logo-s.png) no-repeat center top;
+    width: 220px;
+    height: 124px;
+    margin: 0 auto;
+}
+.tim-btn {
+    width: 240px;
+    height: 53px;
+    background: url(../images/btn-s.png) no-repeat center top;
+    margin: 2% auto 4%;
+}
+.tim-btn p a{
+    width: 240px;
+    height: 53px;
+    float: left;
+}
+
+.tim-icon {
+    background: url(../images/icon.png) no-repeat center top;
+    width: 812px;
+    height: 147px;
+    margin: 0 auto;
+}
+#content{
+    width: 100%;
+    height: 600px;
+    background: url("../images/pcqq_bg.jpg") no-repeat center center;
+}
+.title{
+    width: 576px;
+    padding-top: 11%;
+    height:120px;
+    margin: 0 auto;
+}
+.title-text{
+    width: 328px;
+    height: 84px;
+    float: left;
+    background: url("../images/title-text-1366s.png") no-repeat center top;
+}
+.title-btn{
+    width: 248px;
+    height: 86px;
+    float: right;
+    background: url("../images/title-button-s.png") no-repeat center top;
+}
+.title-btn a{
+    width: 228px;
+    height: 62px;
+    float: left;
+    margin-left:10px;
+    margin-top:12px;
+}
+.title-img{
+    width: 140%;
+    height: auto;
+    margin-left: -300px;
+}
+.circle{
+    position: relative;
+    width: 100%;
+    height: 52px;
+    margin-top: -52px;
+    background: transparent url("../images/linearbot.png") repeat-x left top;
+    text-align: center;
+    z-index: 999;
+}
+.circle span{
+    margin: 0 5px;
+    padding: 2px 5px;
+    background: transparent url(../images/nav.png) no-repeat center center;
+    cursor: pointer;
+}
+.circle span.on{
+    background-image: url(../images/navcur.png);
+}
+#new {
+    width: 100%;
+}
+#new h1{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: url("../images/brand.png") no-repeat center top;
+    padding-top: 280px;
+}
+#firstbg{
+    background-position: 50% 9.54px;
+}
+.firstbg{
+    background-image: url("../images/bg1_1600.jpg");
+    background-size: cover;
+}
+.activebg{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat:no-repeat ;
+}
+.qfigure{
+    width: 100%;
+    height: 584px;
+    background: #fff;
+}
+.qw960{
+    width: 960px;
+    height: 584px;
+    position: relative;
+    margin: 0 auto;
+}
+.txtwrap{
+    position: absolute;
+    width: 487px;
+    right: 7px;
+    top:115px;
+}
+.qcall h2{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 135px;
+    background: transparent url(../images/qcall_txt.png) no-repeat 0 0;
+}
+.qcall p {
+    width: 100%;
+    margin-bottom: 12px;
+    line-height: 25px;
+    text-align: right;
+    opacity: 0.6;
+}
+.txtwrap p {
+    font-size: 18px;
+    letter-spacing: 0.12em;
+}
+.qcall .figs {
+    background: transparent url(../images/qcall_figs.png) no-repeat 190px 41px;
+}
+.figs {
+    width: 100%;
+    padding-top: 44px;
+    min-height: 77px;
+}
+.qcall .figs li {
+    float: right;
+    border-left: 1px solid #e9e9e9;
+}
+.figs li {
+    padding: 58px 0 0;
+    color: #a0a0a0;
+    font-size: 14px;
+    text-align: center;
+}
+.qcall .figs li.f01 {
+    width: 80px;
+    text-align: right;
+}
+.qcall .figs li.f02 {
+    width: 109px;
+}
+.qcall .figs li.f03 {
+    width: 156px;
+    border: none;
+}
+.qcallAnimate {
+    position: absolute;
+    left: -32px;
+    bottom: 0;
+    width: 664px;
+    height: 763px;
+    background: transparent url(../images/pic1.png) no-repeat 0 0;
+}
+#secondbg{
+    background-position: 50% 9.54px;
+}
+.secondbg{
+    background-image: url("../images/avds.jpg");
+    background-size: cover;
+}
+.qfile .txtwrap {
+    position: absolute;
+    left: 7px;
+    top: 115px;
+    width: 450px;
+}
+.qfile h2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 140px;
+    background: transparent url(../images/txt.png) no-repeat 0 0;
+}
+.qfile p {
+    width: 90%;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    line-height: 25px;
+    opacity: 0.6;
+}
+.qfile p {
+    width: 90%;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    line-height: 25px;
+    opacity: 0.6;
+}
+.qfile .figs {
+    background: transparent url(../images/qfile_figs.png) no-repeat 7px 41px;
+}
+.qfile .figs li.f01 {
+    width: 94px;
+    text-align: left;
+    text-indent: 12px;
+}
+.qfile .figs li.f02 {
+    width: 112px;
+}
+.qfile .figs li.f03 {
+    width: 108px;
+    border: none;
+}
+.qfileAnimate {
+    position: absolute;
+    right: -100px;
+    bottom: 104px;
+    width: 597px;
+    height: 330px;
+    background: transparent url(../images/pic2.png) no-repeat 0 0;
+}
+.qfile .figs li {
+    float: left;
+    border-right: 1px solid #e9e9e9;
+}
+#thirdbg{
+    background-position: 50% 9.54px;
+}
+.thirdbg{
+    background-image: url("../images/bg3_1600.jpg");
+    background-size: cover;
+}
+.qblog .txtwrap {
+    position: absolute;
+    right: 7px;
+    top: 120px;
+    width: 495px;
+}
+.qblog h2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 135px;
+    background: transparent url(../images/qblog_txt.png) no-repeat 0 0;
+}
+.qblog p {
+    width: 100%;
+    margin-bottom: 12px;
+    line-height: 25px;
+    text-align: right;
+    opacity: 0.6;
+}
+.qblog p {
+    width: 100%;
+    margin-bottom: 12px;
+    line-height: 25px;
+    text-align: right;
+    opacity: 0.6;
+}
+.qblog .figs {
+    background: transparent url(../images/qblog_figs.png) no-repeat 228px 41px;
+}
+.qblog .figs li.f01 {
+    width: 80px;
+    text-align: right;
+}
+.qblog .figs li.f02 {
+    width: 105px;
+}
+.qblog .figs li.f02 {
+    width: 105px;
+}
+.qblog .figs li {
+    float: right;
+    border-left: 1px solid #e9e9e9;
+}
+
+
+.qblogAnimate {
+    position: absolute;
+    left: 88px;
+    bottom: 0;
+    width: 344px;
+    height: 506px;
+    background: transparent url(../images/pic3.png) no-repeat -30px 0;
+}
+.qblogWrap {
+    position: relative;
+    left: 0;
+    top: 217px;
+    width: 291px;
+    height: 150px;
+}
+.qblogWrap .pic1 {
+    left: -122px;
+    background: transparent url(../images/qblog_fig1.png) no-repeat 0 0;
+    opacity: 0;
+}
+.qblogWrap .pic1 {
+    opacity: 1;
+    -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+.qblogWrap .pic2 {
+     left: 70px;
+     background: transparent url(../images/qblog_fig2.png) no-repeat 0 0;
+     opacity: 0;
+ }
+ .qblogWrap .pic2 {
+    opacity: 1;
+    -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+.qblogWrap .pic3 {
+    right: -119px;
+    background: transparent url(../images/qblog_fig3.png) no-repeat 0 0;
+    opacity: 0;
+}
+ .qblogWrap .pic3{
+    opacity: 1;
+    -webkit-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -moz-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -o-animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    animation: zoomIn 0.2s cubic-bezier(0, .25, .08, 1) 0.4s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+.qblogWrap div {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 150px;
+}
+#footer{
+    width: 100%;
+    height: 348px;
+    padding-top: 34px;
+    background-color: #2a2a2a;
+    font-size: 16px;
+}
+.for{
+    width: 960px;
+    height:205px;
+    margin: 0 auto;
+    position: relative;
+}
+.p{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-top: 1px solid #666;
+    line-height: 17px;
+    text-align: center;
+    color: #666;
+}
+.plats{
+    float: left;
+    width: 510px;
+    padding-left: 8px;
+}
+.plats h3{
+    height: 50px;
+    color: #666;
+    font-size: 14px;
+}
+.plats a{
+    float: left;
+    padding-top:65px;
+    background: url("../images/plats1.png") no-repeat 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: #979797;
+}
+.plats a:hover{
+    color: #12b7f5;
+}
+.plats a.img1{
+    width: 80px;
+    margin-right: 35px;
+    background-position: 0 0;
+}
+.plats a.img1:hover{
+    background-position: 0 -93px;
+}
+.plats a.img2{
+    width: 80px;
+    margin-right: 30px;
+    background-position: -105px 0;
+}
+.plats a.img2:hover{
+    background-position: -105px -93px;
+}
+.plats a.img3{
+    width: 84px;
+    margin-right: 30px;
+    background-position: -210px 0;
+}
+.plats a.img3:hover{
+    background-position: -210px -93px;
+}
+.plats a.img4{
+    width: 76px;
+    background-position: -326px 0;
+}
+.plats a.img4:hover{
+    background-position: -326px -93px;
+}
+.map{
+    width: 185px;
+    float: left;
+}
+.map h3{
+    height: 25px;
+    color: #666;
+    font-size: 14px;
+}
+.map li{
+    line-height: 22px;
+}
+.map a{
+    font-size: 12px;
+}
+.map a:hover{
+    color: #CFCFCF;
+}
+.pac{
+    width: 175px;
+    float: left;
+}
+.pac h3{
+    height: 25px;
+    color: #666;
+    font-size: 14px;
+}
+.pac li{
+    line-height: 22px;
+}
+.pac a{
+    font-size: 12px;
+}
+.pac a:hover{
+    color: #CFCFCF;
+}
+.link{
+    width: 80px;
+    float: left;
+}
+.link h3{
+    height: 25px;
+    color: #666;
+    font-size: 14px;
+}
+.link li{
+    line-height: 22px;
+}
+.link a{
+    font-size: 12px;
+}
+.link a:hover{
+    color: #CFCFCF;
+}
+.sub-list{
+    position: absolute;
+    right: -55px;
+    top:25px;
+}

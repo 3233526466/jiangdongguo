@@ -21,10 +21,9 @@ fieldset, img { border:none; }
 .highlight_tip {
     display:inline;
     float:left;
-    margin:14px 350px;
-    position: absolute;
+    margin:14px 0 14px 350px;
     z-index: 5;
-    width: 100%;
+    width: 300px;
     bottom: 10px;
     font-size: 0;
     text-align: center;

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>平安车险报价计算器</title>
+    <link rel="stylesheet" type="text/css" href="../css/平安车险报价.css" />
+  <style>
+    /*      *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #header{
+            width: 100%;
+            height: 66px;
+        }
+        #header-1{
+            width: 38%;
+            height:100%;
+            float: left;
+        }
+        #header-2{
+            width: 62%;
+            height:100%;
+            float: left;
+            margin-top: 10px;
+        }
+        #a1{
+            margin-left: 70px;
+            margin-top: 20px;
+        }
+        #a2{
+            width: 50%;
+            height:50px;
+            float: left;
+
+        }
+        #a2 li{
+            width:100px;
+            height:100%;
+            float:left;
+            font-size:16px;
+            text-align:center;
+            line-height:50px;
+            color: #000;
+        }
+        #a2 .a3{
+            position:relative;
+        }
+        #a2 .a3 .a3li{
+            position:absolute;
+            width:38px;
+            height:11px;
+            background:url(images/menu_hot.gif);
+            top:10px;
+        }
+        #a2 .a3 a{
+            color:#000000;
+        }
+        #a2 li a{
+            color:#000;
+        }
+        #a2.a3{
+            border-bottom:3px solid #00C888;
+        }
+        #a2  li a:hover{
+            color:#000;
+            border-bottom:3px solid #00C888;
+            cursor:pointer;
+        }
+
+        #new{
+            overflow: auto;
+            width: 100%;
+            height:640px;
+            background: url("images/banner20180105.png") no-repeat  -320px  0;
+        }
+        #b0{
+            width:1002px ;
+            height:400px ;
+            background-color:#FD7244;
+            margin: auto;
+            margin-top: 240px;
+        }
+        #a{
+            width: 980px;
+            height: 12px;
+            margin-left: 10px;
+        }
+        #a0{
+            width: 980px;
+            height: 59px;
+            background-color: #fff;
+            margin-left: 10px;
+        }
+        #mouse{
+            width: 319px;
+            height: 61px;
+            background-color: red;
+            background: url("images/11.png") no-repeat center ;
+            margin-left: 260px;
+            margin-top: 240px;
+            float: left;
+        }
+        #mouse1{
+            width: 319px;
+            height: 61px;
+            background-color: red;
+            background: url("images/11.png") no-repeat center ;
+            margin-left:190px;
+            margin-top: 240px;
+            float: left;
+        }
+        #mouse2{
+            width: 10px;
+            height: 71px;
+
+            background: url("images/1.png") no-repeat center ;
+            margin-left:-419px;
+            margin-top: 240px;
+            float: left;
+        }
+
+        .p{
+            color: #fff33f;
+            font-size: 25px;
+            font-weight: bold;
+            height: 70px;
+            line-height: 61px;
+            margin-top: 0px;
+            margin-left: 80px;
+            width: 319px;
+            font-family: "微软雅黑";
+        }
+        #left{
+            width: 485px;
+            height: 320px;
+            margin-left:10px ;
+            background-color:#fff;
+            float: left;
+        }
+        .list{
+            width:100%;
+            height:100%;
+            color: #333;
+            font-size: 18px;
+            margin-left: 20px;
+            font-family: "微软雅黑";
+
+        }
+        .form1{
+            width: 500px;
+            height: 40px;
+            margin-left: -50px;
+        }
+        #form {
+            width: 250px;
+            height: 35px;
+        }
+        #b1{
+            width: 600px;
+            height: 40px;
+            margin-left: 27px;
+        }
+        #b2{
+            width: 39px;
+            height: 39px;
+            background: url("images/jian_bj.png") no-repeat  ;
+            background-size:39px 39px;
+            float: right;
+            margin-right:216px;
+        }
+        #b2:hover{
+            cursor: pointer;
+        }
+        .form1{
+            width: 500px;
+            height: 40px;
+            margin-left: 27px;
+        }
+        #cb{
+            margin-top: 15px;
+            margin-left: 90px;
+        }
+        #b3{
+            width: 250px;
+            height: 35px;
+            margin-top: 5px;
+        }
+        #b4{
+            margin-left: 63px;
+        }
+        #b5{
+            margin-left: 63px;
+        }
+        #btn{
+            width: 200px;
+            height: 50px;
+            background-color: #FF6424;
+            color: #fff;
+            font-size: 20px;
+            margin-left: 126px;
+            margin-top: 10px;
+            border-top:none ;
+            border-left:none ;
+            border-right:none ;
+            border-bottom: 3px solid #E12101;
+            font-family: "微软雅黑";
+        }
+        #btn:hover{
+            cursor: pointer;
+        }
+        #right{
+            width: 485px;
+            height: 320px;
+            margin-left:10px ;
+            background-color:#fff;
+            float: left;
+        }
+        .img1{
+            margin-left: 60px;
+        }
+         .img2{
+            margin-left: 20px;
+        }
+
+        .img{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-left: 30px;
+        }
+        .img0{
+            width: 200px;
+            height: 100px;
+            font-family: "微软雅黑";
+            color: #333;
+            font-size: 20px;
+            float: left;
+
+            padding-top: 30px;
+            font-weight: bold;
+        }
+        #footer{
+            width: 100%;
+            height: 200px;
+            overflow: auto;
+        }
+        #footer .c1{
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-left: 180px;
+            margin-top: 10px;
+        }
+        #footer .c2{
+            width: 440px;
+            height:30px;
+            float: left;
+            margin-top: 20px;
+        }
+        #footer .c2 p{
+            color: #666;
+            font-size: 14px;
+        }
+        #footer .c2 p a{
+            color: #666;
+            font-size: 14px;
+        }
+
+        #footer .c2 p:hover{
+            cursor:pointer;
+        }
+        #footer .c2 p span{
+            color: #FD7244;
+            font-size: 20px;
+        }
+        #head-denglu{
+            box-sizing: border-box;
+            background: white;
+            display: none;
+            position: absolute;
+            width: 129px;
+            height: 129px;
+            margin-top:50px ;
+            margin-left:170px ;
+        }
+        #footer .c3{
+            width: 700px;
+            height:20px;
+            margin-top: 60px;
+            margin-left: 320px;
+        }
+        #footer .c4{
+            width: 740px;
+            height:20px;
+            margin-top: 5px;
+            margin-left: 300px;
+        }
+        #footer .d1{
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-left: 500px;
+            margin-top: 5px;
+        }
+        #footer .d2{
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-top: 5px;
+        }
+        .d3{
+            width: 300px;
+            height: 20px;
+            padding-top: 5px;
+            float: left;
+        }    */
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="header-1">
+        <img id="a1" src="../images/平安车险报价计算器-images/logo.png" />
+    </div>
+    <div id="header-2">
+        <ul id="a2">
+            <li class="a3"><a href="">汽车保险</a><i class="a3li"></i></li>
+            <li><a href="">特色车险</a></li>
+            <li class="firstli"><a href="">保险购买</a></li>
+            <li class="secondli"><a href="">理赔服务</a></li>
+        </ul>
+        <ul id="head-1">
+            <li><a href="../全部/index.html">汽车保险</a></li>
+            <li><a href="">旅游保险</a></li>
+            <li><a href="">意外保险</a></li>
+            <li><a href="">健康保险</a></li>
+            <li><a href="">财产保险</a></li>
+            <li><a href="">企业保险</a></li>
+        </ul>
+        <ul id="head-2">
+            <li><a href="../全部/index.html">理赔介绍</a></li>
+            <li><a href="">理赔进度查询</a></li>
+            <li><a href="">理赔网点查询</a></li>
+            <li><a href="">航班延误理赔</a></li>
+            <li><a href="">理赔常见问题</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="new">
+    <div id="mouse">
+        <p class="p">车险在线计算器</p>
+    </div>
+    <div id="mouse1">
+        <p class="p">来电咨询报价</p>
+    </div>
+    <div id="mouse2"></div>
+    <div id="b0">
+        <div id="a"> </div>
+        <div id="a0"> </div>
+        <div id="left">
+            <form class="list" id="list-1">
+                <div id="b1">    行驶城市：<input type="text"  id="form" class="text" value="长沙" /> <div id="b2" class="about"></div></div>
+                <ul id="from-0">
+                    <li class="about-1">热门城市<span class="about-2">（其他城市请直接输入）</span> <a href="../全部/index.html" class="about-0">×</a></li>
+                    <li class="about-3">
+                        <a href="../全部/index.html">北京</a>
+                        <a href="">上海</a>
+                        <a href="">广州</a>
+                        <a href="">深圳</a>
+                        <a href="">苏州</a>
+                        <a href="">杭州</a>
+                        <a href="">南京</a>
+                        <a href="">天津</a>
+                        <a href="">济南</a>
+                        <a href="">青岛</a>
+                        <a href="">武汉</a>
+                        <a href="">长沙</a>
+                        <a href="">沈阳</a>
+                        <a href="">成都</a>
+                        <a href="">重庆</a>
+                        <a href="">西安</a>
+                        <a href="">合肥</a>
+                        <a href="">福州</a>
+                        <a href="">长春</a>
+                        <a href="">石家庄</a>
+                    </li>
+                </ul>
+                <div class="form1">   车牌号码：<input type="text" id="b3"  value="湘A"  /></div>
+                <div class="form1">   <input type="checkbox" name="cb" id="cb" /> 尚未取得车牌 </div>
+                <div class="form1" >
+                    提车年月：<select style="width: 60px;height: 25px">
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                </select>年
+                    <select style="width:60px;height: 25px">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>月
+                </div>
+                <div class="form1"  id="b4">  车价：<input type="text" style="width: 50px;height: 25px;" />万元</div>
+                <div class="form1" id="b5">    手机：<input type="text"  class="form" />  </div>
+                <input type="button" id="btn" value="快速报价"/>
+            </form>
+        </div>
+        <div id="right">
+            <form class="list" id="list-2">
+                <img src="../images/平安车险报价计算器-images/dh_img1.png" class="img1" />
+                <img src="../images/平安车险报价计算器-images/dh_img_026.png" class="img2" />
+                <div class="img"> <img src="../images/平安车险报价计算器-images/QRCode.png" class="img3" />
+                </div>
+                <div class="img0">  <p>微信扫码拨号</p>
+                    <p style="margin-top: 10px">来电报价省心又省时</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="c1">
+        <img src="../images/平安车险报价计算器-images/car_lg.png">
+    </div>
+    <div class="c2">
+        <p><a href="" class="lastli"><span>平安好车主</span>——平安产险旗下官方APP，全球最大汽车服务生态圈</a></p>
+    </div>
+    <ul id="head-denglu">
+        <li>
+            <a href="../登录/index.html"> <img src="../images/平安车险报价计算器-images/seo_erwm.jpg" /></a>
+        </li>
+    </ul>
+    <p class="c3">版权所有 &copy; 中国平安保险（集团）股份有限公司 未经许可不得复制、转载或摘编，违者必究!</p>
+    <p class="c4">Copyright &copy; PING AN INSURANCE (GROUP) COMPANY OF CHINA ,LTD. All Rights Reserved</p>
+    <div class="d1"><img src="../images/平安车险报价计算器-images/icon_icp01.png" /></div>
+    <div class="d2"><img src="../images/平安车险报价计算器-images/icon_icp02.png" /></div>
+    <p class="d3">ICP许可证号 粤ICP备06118290号 </p>
+
+</div>
+<script src="../js/平安车险报价.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

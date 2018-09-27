@@ -1,0 +1,1160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#head{
+    width: 100%;
+    height: 32px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #D9D9D9;
+}
+#a0{
+    font-size: 12px;
+    width: 300px;
+    height: 100%;
+    line-height: 32px;
+    padding-left: 200px;
+    color: #666;
+    float: left;
+
+}
+#a1{
+    width: 20px;
+    height: 20px;
+    background: url("../images/平安车险理赔-image/public.png") no-repeat ;
+    padding-left: -20px;
+
+}
+#a0 .a2{
+    margin-left:10px;
+    color: #666;
+}
+#a0 .a2:hover{
+    color: #00C3F5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#a0 .a3{
+    margin-left:10px;
+    color: #666;
+}
+#a0 .a3:hover{
+    color: #00C3F5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#a4{
+    font-size: 12px;
+    width: 50%;
+    height: 100%;
+    line-height: 32px;
+    background: url("../images/平安车险理赔-image/app_code_bg_icons.png")  no-repeat  385px -473px;
+    float:right;
+}
+#a4 .a5 {
+    margin-left: 400px;
+    color: #ff6633;
+}
+#a4 .a6{
+    margin-left: 20px;
+    color: #ff6633;
+}
+#a4 .a5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#a4 .a6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#header{
+    width: 100%;
+    height: 95px;
+
+}
+#b0 .b0{
+    margin-top:20px ;
+    margin-left: 200px;
+}
+#b1{
+    width: 290px;
+    height:28px;
+    border: 1px solid #FF4A00;
+    margin-top:10px ;
+    margin-left:20px ;
+}
+#b2{
+    width: 55px;
+    height:40px;
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    float: left;
+    margin-top:-30px ;
+    margin-left:890px ;
+}
+#b2:hover{
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: -60px 0px;
+}
+.b3{
+    width: 110px;
+    height: 30px;
+    border: 1px solid #E5E5E5;
+    color: #666;
+    margin-top:-40px ;
+    margin-left:950px ;
+    float: left;
+    font-size: 14px;
+}
+.b3 .b3-1{
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+    float: left;
+    margin-top:5px ;
+    margin-left:10px;
+}
+.b3 .b3-2{
+    margin-top: 5px;
+    margin-left:5px;
+    float: left;
+}
+.b3 .b3-3{
+    width: 11px;
+    height: 8px;
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: -120px -450px;
+    float: left;
+    margin-top:10px ;
+    margin-left:5px;
+}
+.b3:hover{
+    cursor: pointer;
+    color: #FF5C02;
+    border: 1px solid #FF5C02;
+}
+.b3 .b3-3:hover{
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: -150px -450px;
+}
+#head-denglu{
+    box-sizing: border-box;
+    background: white;
+    display: none;
+    position: absolute;
+    margin-left:950px ;
+    width: 112px;
+    height: 193px;
+    font-size: 12px;
+    border-bottom: 1px solid #FE6E1F;
+    border-right: 1px solid #FE6E1F;
+    border-left: 1px solid #FE6E1F;
+}
+#head-denglu li {
+     width: 110px;
+    height: 32px;
+ }
+#head-denglu li a{
+    width: 100%;
+    height:100%;
+     color: #666;
+    text-align: center;
+    line-height: 32px;
+    float: left;
+ }
+#head-denglu li a:hover{
+     color: #FE6E1F;
+    background-color: #E5E5E5;
+ }
+
+.b4{
+    width: 110px;
+    height: 30px;
+    border: 1px solid #E5E5E5;
+    color: #666;
+    margin-top:-40px ;
+    margin-left:1100px ;
+    float: left;
+    font-size: 14px;
+}
+.b4 .b4-1{
+    width: 16px;
+    height: 14px;
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: -60px -60px;
+    float: left;
+    margin-top:9px ;
+    margin-left:10px;
+}
+.b4 .b4-2{
+    margin-top: 5px;
+    margin-left:10px;
+    float: left;
+}
+.b4:hover{
+    cursor: pointer;
+    color: #FF5C02;
+    border: 1px solid #FF5C02;
+}
+#head-denglus{
+    box-sizing: border-box;
+    background: white;
+    display: none;
+    position: absolute;
+    margin-left:884px ;
+    width: 328px;
+    height: 44px;
+    font-size: 12px;
+    border: 1px solid #FE6E1F;
+}
+#head-denglus li {
+    width: 328px;
+    height: 44px;
+   color: #666;
+    line-height: 44px;
+    text-align: left;
+    float: left;
+}
+#head-denglus .head-left{
+    margin-left: 70px;
+    float: left;
+}
+#head-denglus li a{
+    width: 100%;
+    height: 100%;
+    color: #FE6E1F;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 44px;
+
+}
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: #FF5C00;
+}
+#c0{
+    width:250px ;
+    height: 50px;
+    background-color: #FF7F2B;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    margin-top:-10px ;
+    margin-left:175px ;
+}
+#c0 .c0-1{
+    margin-top:20px ;
+    margin-left: 20px;
+    font-family: "微软雅黑";
+    padding-left: 5px;
+}
+#c0 .c0-2{
+    width: 40px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/index_icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px -450px;
+    float: left;
+    margin-left: 220px;
+    margin-top: -40px;
+}
+#c1{
+    width: 600px;
+    height: 100%;
+    margin-left: 425px;
+}
+#c1 li {
+    color: #fff;
+    font-size: 16px;
+    float: left;
+}
+#c1 .c1-1{
+    width:56px ;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+}
+#c1 .c1-1:hover{
+    cursor: pointer;
+    background-color:#FF7F2B ;
+}
+#c1 .c1-2{
+    width:88px ;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+    background-color:#FF7F2B ;
+    margin-left: 25px;
+}
+#c1 .c1-2:hover{
+    cursor: pointer;
+}
+#c1 .c1-3{
+    width:88px ;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 25px;
+}
+#c1 .c1-3:hover{
+    cursor: pointer;
+    background-color:#FF7F2B ;
+}
+#c1 .c1-4{
+    width:88px ;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 25px;
+}
+#c1 .c1-4:hover{
+    cursor: pointer;
+    background-color:#FF7F2B ;
+}
+#c1 .c1-5{
+    width:152px ;
+    height:100%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 25px;
+}
+#c1 .c1-5:hover{
+    cursor: pointer;
+    background-color:#FF7F2B ;
+}
+#c1 .c1-1{
+    position:relative;
+}
+#c1 .c1-1 .c1li{
+    position:absolute;
+    width:27px;
+    height:10px;
+    top:-10px;
+    left: 380px;
+    color: yellow;
+    font-size: 14px;
+}
+#new{
+    width: 100%;
+    height: 737px;
+    background-color: #F9F9F9;
+}
+#d0{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+#d1{
+    width: 100%;
+    height: 20px;
+    padding-top:20px ;
+
+}
+#d1 .d1-1{
+    color: #666;
+}
+#d1 .d1-2{
+    color: #FF4A00;
+}
+#d1 .d1-1:hover{
+    color: #FF4A00;
+    text-decoration: underline;
+}
+#d2{
+    width:740px ;
+    height:302px;
+    background-color:#fff;
+    float: left;
+    border: 1px solid #eee;
+}
+#d2 .d2-1{
+    width:349px ;
+    height: 130px;
+    float: left;
+    margin-top:15px ;
+    margin-left:10px ;
+}
+#d2 .D2-2{
+    width: 100%;
+    height: 36px;
+    background-image: url("../images/平安车险理赔-image/service-tit.jpg");
+    background-repeat: no-repeat;
+}
+#d2 .d2-3{
+    width: 110px;
+    height: 21px;
+    margin-left:50px;
+    margin-top: 16px;
+    background-color: #fff;
+    float: left;
+}
+#d2 .d2-3 a{
+    color: #000;
+    font-size: 14px;
+}
+#d2 .d2-3 a:hover{
+    text-decoration: underline;
+}
+.hot{
+    width: 28px;
+    height: 14px;
+    background: url("../images/平安车险理赔-image/hot.gif") no-repeat ;
+    font-size: 12px;
+    color: #fff;
+    margin-left: -30px;
+    padding-left: 2px;
+}
+#d2 .D3-2{
+    width: 100%;
+    height: 36px;
+    background-image: url("../images/平安车险理赔-image/service-tit.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -36px;
+}
+#d2 .D4-2{
+    width: 100%;
+    height: 36px;
+    background-image: url("../images/平安车险理赔-image/service-tit.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -72px;
+}
+#d2 .D5-2{
+    width: 100%;
+    height: 36px;
+    background-image: url("../images/平安车险理赔-image/service-tit.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -108px;
+}
+
+#d3{
+    width:740px ;
+    height:333px;
+    background-color:#fff;
+    margin-top: 5px;
+    float: left;
+    border: 1px solid #eee;
+}
+#d3-0{
+    width:708px ;
+    height: 301px;
+    margin: auto;
+    margin-top: 15px;
+}
+#d3-1{
+
+    width: 100%;
+    height: 18px;
+    border-left: 5px solid #FD6E1F;
+}
+.d3_1{
+    width: 100px;
+    height:18px ;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.d3_2{
+    width: 110px;
+    height:16px;
+    background-image: url("../images/平安车险理赔-image/lipei-summary.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: -16px;
+    margin-left:100px;
+}
+#d3-2{
+    width: 693px;
+    height:46px;
+    margin-left: 15px;
+}
+.d3-2{
+    width: 80px;
+    height: 24px;
+    font-size: 16px;
+    border-bottom: 2px solid #FE6E1F;
+    line-height: 24px;
+    float: left;
+    margin-top: 20px;
+}
+.d3-2 a{
+    color: #FE6E1F;
+}
+.d3-3{
+    width: 80px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.d3-3 a{
+    color: #000;
+}
+.d3-3 a:hover{
+    color: #FE6E1F;
+}
+.d3-3:hover{
+    border-bottom: 2px solid #FE6E1F;
+}
+.d3-4{
+    width: 64px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.d3-4 a{
+    color: #000;
+}
+.d3-4 a:hover{
+    color: #FE6E1F;
+}
+.d3-4:hover{
+    border-bottom: 2px solid #FE6E1F;
+}
+#d3-3{
+    width: 688px;
+    height: 45px;
+    background-color: #F0F0F0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.D3-3 li{
+    width: 163px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+}
+.d3_3{
+    margin-left: 25px;
+}
+.math{
+    color: #FE6E1F;
+}
+.img1{
+    float: left;
+    margin-left: -500px;
+}
+.img2{
+    float: left;
+    margin-left: -325px;
+}
+.img3{
+    float: left;
+    margin-left: -150px;
+}
+.img4{
+    float: left;
+    margin-left: 4px;
+}
+
+#d3-4{
+    width: 693px;
+    height: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#d3-4 a{
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 620px;
+    float: left;
+}
+
+
+#d3-4 a:hover{
+    color: #2E84CA;
+    text-decoration: underline;
+}
+#d3-5 .d3-5-1{
+    width:228px  ;
+    height:136px ;
+    margin-left: 15px;
+    margin-top: 18px;
+    float: left;
+}
+.D3-5{
+    list-style: disc;
+!important;
+    color: #666;
+    width:102px ;
+    height: 20px;
+    font-size: 12px;
+}
+.d3-5-1 ul{
+    float: right;
+}
+#d3-5 .d3-5-2{
+    width:228px  ;
+    height:136px ;
+    margin-left: 4px;
+    margin-top: 18px;
+    float: left;
+}
+.D3-5{
+    list-style: disc;
+!important;
+    color: #666;
+    width:102px ;
+    height: 20px;
+    font-size: 12px;
+}
+.d3-5-2 ul{
+    float: right;
+}
+#d3-5 .d3-5-3{
+    width:228px  ;
+    height:136px ;
+    margin-left: 4px;
+    margin-top: 18px;
+    float: left;
+}
+.D3-5{
+    list-style: disc;
+!important;
+    color: #666;
+    width:102px ;
+    height: 20px;
+    font-size: 12px;
+}
+.d3-5-3 ul{
+    float: right;
+}
+
+#min{
+    width: 708px;
+    height: 250px;
+    margin-left:15px ;
+    margin-top: -83px;
+    box-sizing: border-box;
+    background: white;
+    display: none;
+    position: absolute;
+}
+.midden{
+    width: 693px;
+    height: 45px;
+    margin-top: 8px;
+    background-color: #F0F0F0;
+}
+.midden-li-1{
+    width: 140px;
+    height: 45px;
+    text-align: center;
+}
+.midden li{
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 3px;
+}
+.midden-li{
+    width: 21px;
+    height: 45px;
+    background: url("../images/平安车险理赔-image/arrow.jpg") no-repeat;
+}
+.end-li{
+    width: 21px;
+    height: 45px;
+    padding-left: 6px;
+    background: url("../images/平安车险理赔-image/arrow02.jpg") no-repeat;
+    float: left;
+}
+#pool{
+    width: 693px;
+    height: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#pool a{
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 620px;
+    float: left;
+}
+#pool a:hover{
+    color: #2E84CA;
+    text-decoration: underline;
+}
+.left{
+    width:350px;
+    height: 136px;
+    padding-right: 4px;
+    float: left;
+}
+.right{
+    width: 350px;
+    height: 136px;
+    padding-right: 4px;
+    float: left;
+}
+.left ul{
+    margin-top: -110px;
+}
+.string{
+    font-size: 12px;
+    color: #666;
+    width: 220px;
+    height: 20px;
+    float: left;
+    margin-left: 130px;
+    list-style: disc;
+!important;
+}
+.right ul{
+    margin-top: -110px;
+}
+.string1{
+    font-size: 12px;
+    color: #666;
+    width: 240px;
+    height: 20px;
+    float: left;
+    margin-left: 130px;
+    list-style: disc;
+!important;
+}
+
+#pictrue{
+    width: 742px;
+    height: 373px;
+    padding-left: 33px;
+    margin-top: -80px;
+    margin-left: -17px;
+    border-left: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    background: white;
+    display: none;
+    position: absolute;
+}
+.r1{
+    width: 693px;
+    height: 45px;
+    margin-top: 10px;
+    background-color: #F0F0F0;
+}
+.r1 li{
+    float: left;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 3px;
+}
+.middenli{
+    width: 25px;
+    height: 45px;
+    background: url("../images/平安车险理赔-image/arrow.jpg") no-repeat;
+}
+.endli{
+    width: 21px;
+    height: 45px;
+    padding-left: 6px;
+    background: url("../images/平安车险理赔-image/arrow02.jpg") no-repeat;
+    float: left;
+}
+#bool{
+    width: 693px;
+    height: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#bool a{
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 620px;
+    float: left;
+}
+#bool a:hover{
+    color: #2E84CA;
+    text-decoration: underline;
+}
+#man{
+    width: 675px;
+    height: 242px;
+    margin-top: 20px;
+
+}
+.m1{
+    width: 225px;
+    height: 121px;
+    float: left;
+}
+.m1 ul{
+    float: right;
+}
+.m1 li{
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    color: #666;
+    list-style: disc;
+!important;
+}
+
+
+#d4{
+    width: 250px;
+    height:600px;
+    float: right;
+    margin-top: -302px;
+}
+.d4-1{
+    width: 250px;
+    height: 146px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.d4-1-1{
+    width: 218px;
+    height: 16px;
+    border-left: 5px solid #FE6E1F;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    line-height: 16px;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.d4-1-2{
+    width: 83px;
+    height: 83px;
+    background-image: url("../images/平安车险理赔-image/sidebar-right-icon.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.d4-1-3{
+    width: 100px;
+    height: 16px;
+    float:left ;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.endli a{
+    width: 100px;
+    height: 16px;
+    float:left ;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #FE6E1F;
+}
+.endli a:hover{
+    text-decoration: underline;
+    color: #2E84CA;
+}
+.d4-2{
+    width: 250px;
+    height: 146px;
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #eee;
+}
+.d4-2-2{
+    width: 83px;
+    height: 83px;
+    background-image: url("../images/平安车险理赔-image/sidebar-right-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -83px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.d4-3{
+    width: 250px;
+    height: 146px;
+    background-color: #fff;
+    margin-top: 5px;
+    border: 1px solid #eee;
+}
+.firstli {
+    width: 100px;
+    height: 16px;
+    float:left ;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #FE6E1F;
+}
+.d4-3-2{
+    width: 83px;
+    height: 83px;
+    background-image: url("../images/平安车险理赔-image/sidebar-right-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -166px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.d4-4{
+    width: 230px;
+    height:16px;
+    font-size: 13px;
+    color: #666;
+    margin-left: 10px;
+}
+.d4-5{
+    width: 230px;
+    height:16px;
+    font-size: 13px;
+    color: #666;
+    margin-left: 15px;
+}
+.d4-6 {
+    width: 120px;
+    height:20px;
+    font-size: 16px;
+    margin-left:20px ;
+    margin-top:10px ;
+}
+.d4-6 a{
+    color: #2E84CA;
+}
+.d4-6 a:hover{
+    text-decoration: underline;
+}
+#from-1{
+    box-sizing: border-box;
+    background: white;
+    display: none;
+    position: absolute;
+    margin-left: -250px;
+    margin-top: 15px;
+    width: 492px;
+    height: 116px;
+    border: 1px solid #2C84CB;
+}
+
+.about-2{
+    width: 26px;
+    height: 15px;
+    background: url("../images/平安车险理赔-image/ser_area_arrow01.png") no-repeat;
+    margin-top: -15px;
+    margin-left: 300px;
+    float: left;
+}
+.about-3 a{
+    width: 49px;
+    height: 29px;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    line-height: 29px;
+    float: left;
+}
+#footer{
+    width: 100%;
+    height: 289px;
+    border-top: 1px solid #DCDCDC;
+    background-color: #F3F3F3;
+}
+#first{
+    width: 100%;
+    height: 130px;
+    border-bottom:1px solid #DCDCDC ;
+}
+.about{
+    width: 1000px;
+    height: 78px;
+    margin: auto;
+    margin-top: 50px;
+}
+.f0{
+    width:84px ;
+    height:78px ;
+    margin-left: 50px;
+    float: left;
+}
+.f0-1 a{
+    width: 100%;
+    height: 20px;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    float: left;
+}
+.f0-1 a:hover{
+    color: #FE6E1F;
+}
+#f1 a{
+    width: 53px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-138px 0px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f1 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-228px 0px ;
+    background-repeat: no-repeat;
+}
+#f2 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-130px -70px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f2 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-220px -70px ;
+    background-repeat: no-repeat;
+}
+#f3 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-137px -139px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f3 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-227px -139px ;
+    background-repeat: no-repeat;
+}
+#f4 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-139px -210px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f4 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-229px -210px ;
+    background-repeat: no-repeat;
+}
+#f5 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-135px -280px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f5 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-225px -280px ;
+    background-repeat: no-repeat;
+}
+#f6 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-135px -350px ;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    float: left;
+}
+.f0>#f6 a:hover{
+    background-image: url("../images/平安车险理赔-image/public.png");
+    background-position:-225px -350px ;
+    background-repeat: no-repeat;
+}
+#f7 a{
+    width: 60px;
+    height: 48px;
+    background-image: url("../images/平安车险理赔-image/touch.png");
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    float: left;
+}
+#f7 a:hover{
+    background-image: url("../images/平安车险理赔-image/touchover.png");
+    background-repeat: no-repeat;
+}
+.endp{
+    width: 620px;
+    height: 24px;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+    margin-left:175px ;
+    margin-top: 10px;
+}
+.endp a{
+    color: #666;
+
+}
+.endp :hover{
+    text-decoration: underline;
+}
+.img-0{
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+    color: #666;
+    float: left;
+    margin-left: 200px;
+    margin-top: -90px ;
+}
+.img-0-1{
+    width: 100px;
+    height: 20px;
+    float: left;
+}
+.img-0-2{
+    width: 100px;
+    height: 20px;
+    float: left;
+}
+.img-1{
+    width:181px ;
+    height: 83px;
+    margin-top: -50px;
+    margin-left: 205px;
+    float: left;
+}
+.img-2{
+    width:83px ;
+    height: 83px;
+    background-image: url("../images/平安车险理赔-image/foot_code1.jpg");
+    background-repeat: no-repeat;
+    float: left;
+}
+.img-3{
+    width:83px ;
+    height: 83px;
+    background-image: url("../images/平安车险理赔-image/foot_code2.jpg");
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    float: left;
+}

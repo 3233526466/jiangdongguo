@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 500px;
+            margin: 70px auto;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        /*游戏区域*/
+        #content{
+            width: 600px;
+            height: 500px;
+            background-color: yellow;
+            position: relative;
+            left: 0;
+        }
+        /*三个柱子*/
+        #leftdiv{
+            width: 80px;
+            height: 200px;
+            background-color: black;
+            bottom: 0;
+            position: absolute;
+        }
+        #middiv{
+            width: 80px;
+            height: 200px;
+            background-color: black;
+            left:200px;
+            bottom: 0;
+            position: absolute;
+        }
+        #rightdiv{
+            width: 80px;
+            height: 200px;
+            background-color: black;
+            left:400px;
+            bottom: 0;
+            position: absolute;
+        }
+        #hero{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            left:0;
+            bottom: 200px;
+            position: absolute;
+        }
+        #stick{
+            width: 0;
+            height: 6px;
+            background-color: lime;
+            left:40px;
+            bottom: 200px;
+            position: absolute;
+
+            /*一开始先旋转90%   旋转的话默认旋转点是中心点*/
+            transform: rotate(-90deg);
+            transform-origin:0 6px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="content">
+        <div id="leftdiv"></div>
+        <div id="middiv"></div>
+        <div id="rightdiv"></div>
+        <div id="hero"></div>
+        <div id="stick"></div>
+    </div>
+</div>
+<script>
+    var stick=document.getElementById("stick");
+    var leftdiv=document.getElementById("leftdiv");
+    var middiv=document.getElementById("middiv");
+    var rightdiv=document.getElementById("rightdiv");
+    var hero=document.getElementById("hero");
+    var content=document.getElementById("content");
+    var box=document.getElementById("box");
+
+    var num=0;//棍子的长度
+    var timer;
+    var flag=false;//判断游戏是否继续
+    var step=0;
+
+    //游戏一开始的时候，中间的方块，大小距离都应该随机
+    middiv.style.width=parseInt(Math.random()*40+40)+"px";
+    middiv.style.left=parseInt(Math.random()*130+90)+"px";
+
+    //鼠标按下，棍子变长
+    box.onmousedown=function(ev){
+        timer=setInterval(function(){
+            num+=2;
+            stick.style.width=num + "px";
+        },20);
+        //禁止事件冒泡
+        ev.stopPropagation();
+    };
+    //鼠标松开，棍子落下
+    box.onmouseup=function(ev){
+        clearInterval(timer);
+        //添加过度
+        stick.style.transition="0.5s";
+        stick.style.transform="rotate(0deg)";
+        //游戏判断
+        if( num+40> middiv.offsetLeft  && num+40<middiv.offsetLeft +middiv.offsetWidth){
+            //console.log("成功");
+            flag=true;
+
+            //开始随机创建方块
+            rightdiv.style.width=parseInt(Math.random()*40+40)+"px";
+            rightdiv.style.left=parseInt(Math.random()*130+390)+"px";
+        }else {
+            //console.log("失败");
+           flag=false;
+        }
+        //禁止事件冒泡
+        ev.stopPropagation();
+    };
+
+    //红色的小方块什么时候移动
+    stick.addEventListener("transitionend",function(ev){
+        //在什么情况之下可以移动
+        if(flag){
+            //小方块移动
+            hero.style.transition="1s";
+            hero.style.left=middiv.offsetLeft+"px";
+        }else {
+            alert("游戏失败");
+        }
+        //禁止事件冒泡
+        ev.stopPropagation();
+    },false);
+
+    //当红色的小方块移动完毕，游戏区域往左移
+    hero.addEventListener("transitionend",function(ev){
+        content.style.transition="1s";
+        content.style.left= - middiv.offsetLeft+"px";
+
+        step=1;
+        //禁止事件冒泡
+        ev.stopPropagation();
+    },false);
+    content.addEventListener("transitionend",function(ev){
+        //注意，事件冒泡
+        if(step==1) {
+            //一切还原
+            content.style.transition="none";
+            content.style.left=0;
+            hero.style.transition="none";
+            hero.style.left=0;
+            stick.style.transition="none";
+            stick.style.transform="rotate(-90deg)";
+            stick.style.width=0;
+
+            num=0;
+            step=0;
+            //左 -> 中    中 ->  右
+            leftdiv.style.width=middiv.style.width+"px";
+            middiv.style.width=rightdiv.style.width+"px";
+            middiv.style.left=rightdiv.style.offsetLeft+"px";
+        }
+        //禁止事件冒泡
+        ev.stopPropagation();
+        },false);
+
+</script>
+</body>
+</html>

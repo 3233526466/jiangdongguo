@@ -1,0 +1,85 @@
+{% extends 'layout.html'%}
+
+{% block main%}
+<ol class="breadcrumb">
+    <li><a href="/">管理首页</a></li>
+    <li><span>分类列表</span></li>
+</ol>
+
+<h3>分类列表</h3>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>分类名称</th>
+        <th>操作</th>
+    </tr>
+
+    {%for type in types%}
+    <tr>
+        <td>{{type.tid}}</td>
+        <td>{{type.tname}}</td>
+            <!--首页无法修改，无法删除-->
+        <td>
+            {%if type.tid!=1%}
+            <a href="javascript:void(0)"  onclick="edit('{{type.tname}}','{{type.tid}}')">修改</a>|
+            <a href="javascript:void(0)"  onclick="del('{{type.tid}}')">删除</a>
+            {%endif%}
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+<script>
+    //修改
+    function edit(val,tid){
+        var name=prompt("把"+val+"修改为：",val);
+        if(!name){
+            alert("类型名不能为空");
+            return;
+        }
+        //发送ajax
+        $.ajax({
+            type:"post",
+            url:"/admin/category/edit",
+            data:{
+                tid:tid,
+                tname:name
+            },
+            success:function(data){
+                if(data=="0"){
+                    alert("网络问题");
+                }else {
+                    //修改成功，重新加载页面
+                    window.location.reload();
+                }
+            }
+        });
+    }
+
+    //删除
+    function del(tid){
+        var flag=confirm("确定要删除此数据吗？");
+        if(flag) {
+            $.ajax({
+                type: "post",
+                url: "/admin/category/del",
+                data: {
+                    tid: tid
+                },
+                success: function (data) {
+                    if (data == "0") {
+                        alert("网络问题");
+                    } else {
+                        //删除成功，重新加载页面
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+    }
+</script>
+
+{%include 'page.html'%}
+
+{% endblock %}

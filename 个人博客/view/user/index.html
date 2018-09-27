@@ -1,0 +1,27 @@
+<!--上面的所有的内容，都是继承自layout.html页面的-->
+{% extends 'layout.html'%}
+
+{% block main%}
+<ol class="breadcrumb">
+    <li><a href="/">管理首页</a></li>
+    <li><span>用户列表</span></li>
+</ol>
+
+<h3>用户列表</h3>
+
+<table class="table table-hover table-striped">
+    <tr>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>是否是管理员</th>
+    </tr>
+    <tr>
+        <td>123</td>
+        <td>abc</td>
+        <td>aaa</td>
+        <td>是</td>
+    </tr>
+</table>
+
+{% endblock %}

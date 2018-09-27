@@ -1,0 +1,49 @@
+{% extends 'layout.html'%}
+
+{% block main%}
+<ol class="breadcrumb">
+    <li><a href="/">管理首页</a></li>
+    <li><span>分类添加</span></li>
+</ol>
+
+<h3>分类添加</h3>
+<form method="">
+    <div class="form-group">
+        <label for="name">分类名称：</label>
+    <input type="text" id="name" class="form-control" placeholder="请输入分类名称" name="name"/>
+</div>
+    <div id="msg" style="display: none"></div>
+    <button type="button" class="btn btn-default"  id="sub" >提交</button>
+</form>
+
+<script>
+    $("#sub").on("click",function(){
+        var tname=$("#name").val();
+        //发送ajax
+        $.ajax({
+            type:"post",
+            url:"/admin/category/add",
+            data:{
+                tname:tname
+            },
+            dataType:'json',
+            success:function(data){
+                console.log(data);
+                if(data.code==0){
+                    $("#msg").html(data.message).css("color","red").show();
+                    $("#name").val("");
+                }else if(data.code==1){
+                    //修改成功，重新加载页面
+                    $("#msg").html(data.message).css("color","lime").show();
+                    setTimeout(function(){
+                        //window.location.reload();
+                        $("#msg").hide();
+                        $("#name").val("");
+                    },1500);
+                }
+            }
+        });
+    })
+</script>
+
+{% endblock %}
